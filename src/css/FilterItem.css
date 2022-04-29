@@ -1,0 +1,41 @@
+.filterItem {
+  display: flex;
+  width: auto;
+  height: 32px;
+  background-color: hsl(180, 52%, 96%);
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 9px;
+}
+
+.filterItem__text {
+  display: block;
+  color: hsl(180, 29%, 50%);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 8px 0 0 8px;
+}
+
+.filterItem__button {
+  margin-left: 10px;
+  width: 35px;
+  background-color: hsl(180, 29%, 50%);
+}
+
+@media (min-width:700px) {
+  .filterItem__button:hover{
+    background-color: hsl(180, 14%, 20%);
+  }
+}
+
+
+.filterItem__button-img {
+  margin: 8px 0 0 8px;
+}
+
+@media (max-width: 375px) {
+  .filterItem {
+    margin-bottom: 15px;
+  }
+}

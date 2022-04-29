@@ -1,0 +1,196 @@
+.JobItem {
+  width: 1110px;
+  height: 153px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.JobItem__line {
+  background-color: hsl(180, 29%, 50%);
+  width:5px;
+  height: 100%;
+}
+
+.JobItem__leftBlock {
+  display: flex;
+}
+
+.JobItem__img {
+  width: 90px;
+  height: 90px;
+  margin: 32px 0 0 34px;
+}
+
+.JobItem__info {
+  margin-top: 30px;
+  margin-left: 22px
+}
+
+.JobItem__info-firstLine {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.JobItem__companyName {
+font-size: 18px;
+font-weight: 700;
+transform: translateY(-4px);
+}
+
+.JobItem__flag--new{
+  display: inline-block;
+  background-color: hsl(180, 29%, 50%);
+  color: #fff;
+  width: 50px;
+  height: 24px;
+  border-radius: 20px;
+  transform: translateY(-4px);
+  padding-top: 7px;
+  margin-left: 17px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.JobItem__flag--featured{
+  display: inline-block;
+  background-color: hsl(180, 14%, 20%);
+  color: #fff;
+  width: auto;
+  height: 24px;
+  border-radius: 20px;
+  transform: translateY(-4px);
+  padding: 7px 7px 0 7px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.JobItem__vacancy {
+  font-size: 23px;
+  font-weight: 700;
+  margin: 8px 0 0 1px;
+  color: hsl(180, 14%, 20%);
+}
+
+.JobItem__params {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.JobItem__hr {
+  display: none;
+}
+
+.JobItem__tags {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+.JobItem__tag {
+  display: inline-block;
+  background-color: hsl(180, 52%, 96%);
+  color: #000;
+  width: auto;
+  height: 32px;
+  border-radius: 5px;
+  transform: translateY(-4px);
+  padding: 9px 7px 0 11px;
+  margin-top: 65px;
+  margin-left: 12px;
+  margin: 65px 0 0 14px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .JobItem {
+    position: relative;
+    width: 327px;
+    height: 260px;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 38px;
+    overflow: visible;
+    
+  }
+
+  .JobItem__line {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .JobItem__leftBlock {
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+
+  .JobItem__img {
+    width: 50px;
+    height: 50px;
+    transform: translate(-16px, -57px);
+  }
+
+  .JobItem__info {
+    margin-left: -60px;
+  }
+
+  .JobItem__companyName {
+    color: hsl(180, 29%, 50%);
+    font-size: 15px;
+  }
+
+  .JobItem__vacancy {
+    font-size: 18px;
+  }
+
+  .JobItem__params {
+    font-size: 15px;
+    transform: translate(-3px, 8px);
+    letter-spacing: 0.5px;
+  }
+
+  .JobItem__hr {
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: hsl(180, 2%, 89%);
+    position: absolute;
+    top: 136px;
+    transform: translateX(15px);
+  }
+
+  .JobItem__tags {
+    position: absolute;
+    top:157px;
+    left:24px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .JobItem__tag {
+    margin: -1px 14px 20px 0;
+
+  }
+}
+
+@media (min-width:700px) {
+  .JobItem__tag:hover {
+    background-color: hsl(180, 29%, 50%);
+  }
+
+  
+.JobItem__vacancy:hover {
+  color: hsl(180, 29%, 50%);
+}
+}
