@@ -1,54 +1,8 @@
 import React from 'react';
+import Icon from './Icon';
 import '../css/JobItem.css'
-import photosnap from '../images/photosnap.svg'
-import manage from '../images/manage.svg'
-import account from '../images/account.svg'
-import myhome from '../images/myhome.svg'
-import loopStudios from '../images/loop-studios.svg'
-import faceit from '../images/faceit.svg'
-import shortly from '../images/shortly.svg'
-import insure from '../images/insure.svg'
-import eyecamCo from '../images/eyecam-co.svg'
-import TAFC from '../images/the-air-filter-company.svg'
-
 
 const JobItem = ({data, filter, setFilter, setIsFiltered}) => {
-  
-  let imgSrc = null
-  switch (data.company) {
-    case "Photosnap":
-      imgSrc = photosnap
-      break;
-    case "Manage":
-      imgSrc = manage
-      break;
-    case "Account":
-      imgSrc = account
-      break;
-    case "MyHome":
-      imgSrc = myhome
-      break;
-    case "Loop Studios":
-      imgSrc = loopStudios
-      break;
-    case "FaceIt":
-      imgSrc = faceit
-      break;
-    case "Shortly":
-      imgSrc = shortly
-      break;
-    case "Insure":
-      imgSrc = insure
-      break;
-    case "Eyecam Co.":
-      imgSrc = eyecamCo
-      break;
-    case "The Air Filter Company":
-      imgSrc = TAFC
-      break;
-    default: imgSrc = ''
-      break;
-  }
 
   const filterRole = (e) => {
     let role = e.target.textContent
@@ -77,12 +31,11 @@ const JobItem = ({data, filter, setFilter, setIsFiltered}) => {
     setIsFiltered(true)
   }
 
-
   return (
     <div className='JobItem'>
       {data.featured ? <div className='JobItem__line'></div> : null }
       <div className='JobItem__leftBlock'>
-        <img className='JobItem__img' src={imgSrc} alt='img'/>
+        <Icon name={data.logo.split('/')[2].split('.')[0]} style='JobItem__img'/>
         <div className='JobItem__info'>
           <div className='JobItem__info-firstLine'>
             <span className='JobItem__companyName'>{data.company}</span>{data.new ? <span className='JobItem__flag--new'>NEW!</span> : null}{data.featured ? <span className='JobItem__flag--featured'>FEATURED!</span> : null}
