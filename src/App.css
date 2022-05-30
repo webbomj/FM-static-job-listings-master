@@ -10,3 +10,9 @@
   width: 1440px;
   height: 157px;
 }
+
+@media (max-width: 1340px) {
+  .App-bg{
+    width: 100%;
+  }
+}

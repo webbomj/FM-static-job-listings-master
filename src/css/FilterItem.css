@@ -22,6 +22,11 @@
   width: 35px;
   background-color: hsl(180, 29%, 50%);
 }
+@media (max-width: 1340px) {
+  .filterItem {
+    margin-bottom: 10px;
+  }
+}
 
 @media (min-width:700px) {
   .filterItem__button:hover{
@@ -34,7 +39,7 @@
   margin: 8px 0 0 8px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .filterItem {
     margin-bottom: 15px;
   }
