@@ -1,7 +1,8 @@
 # Frontend Mentor - Job listings with filtering
 Практическая работа с сайта `frontendmentor.io`.<br>
 Стильный список вакансий с возможностью фильтровать вакансии по тегам.<br>
-[DEMO](https://webbomj.github.io/FM-static-job-listings-master/)
+[DEMO](https://webbomj.github.io/FM-static-job-listings-master/)<br>
+
 ![Design preview for the Job listings with filtering coding challenge](./public/desktop-preview.jpg)
 
 ## Скрипты
